@@ -1,0 +1,89 @@
+﻿body
+{
+    font-family: "Trebuchet MS" , "Lucida Sans Unicode" , "Lucida Grande" , "Lucida Sans" , Arial, sans-serif;
+    /*background: #c0c0c0 url(../Images/bodybg.gif) repeat-x top;*/
+}
+
+/********* div-title **************/
+.div-title
+{
+    font-family: Verdana;
+    font-weight: bold;
+    color: Blue;
+    text-align: center;
+}
+.formbody_ChangePassword
+{
+    height: 300px;
+    background: url(../Images/formbody_ChangePassword.png) no-repeat top;
+}
+#btnLogin
+{
+    border-radius: 5px 5px 5px 5px;
+    background-color: #094E7F;
+    color: White;
+    font-weight: bold;
+}
+
+.login_header
+{
+    /*background: url(../TestImages/header_bg.png) no-repeat top;*/
+    background-color: #094E7F;
+    height: 60px;
+    width: 380px;
+    line-height: 60px;
+    padding-left: 20px;
+    border-radius: 4px 4px 0px 0px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.formbody
+{
+    /*width: 400px;*/
+    height: 300px;
+    background: url(../Images/formbody.png) no-repeat top;
+}
+.formbody_login
+{
+    /*width: 400px;*/
+    height: 300px;
+   /* background: url(../Images/formbody_login.png) no-repeat top;*/
+   background-color:#F2F2F2;
+}
+.formbody_ForgetPassword
+{
+    height: 300px;
+    background: url(../Images/formbody_ForgetPassword.png) no-repeat top;
+}
+.Web_link
+{
+    font-family:Verdana;
+    font-size:11px;
+}
+
+.Home_Logo
+{
+    text-align:right;
+}
+/*-------------Header div------------------*/
+.div_header_line1
+{
+    font-family: arial,helvetica,clean,sans-serif;
+    text-align: center;
+    color: #094E7F;
+    font-size: 20px;
+}
+.div_header_line2
+{
+    font-family: arial,helvetica,clean,sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #094E7F;
+}
+.div_header_line3
+{
+    font-family: arial,helvetica,clean,sans-serif;
+    text-align: center;
+    font-size: 18px;
+}

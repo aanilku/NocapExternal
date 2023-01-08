@@ -1,0 +1,160 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ApplicantRegistrationMaster.master.cs"
+    Inherits="Sub_ApplicantRegi_ApplicantRegistrationMaster" %>
+
+<%--<%@ Register src="../../AscxControl/HeaderOnly.ascx" tagname="HeaderOnly" tagprefix="uc1" %>--%>
+<%@ Register Src="../../AscxControl/ExternalUserLeftMenu.ascx" TagName="ExternalUserLeftMenu"
+    TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="../../css/table.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+    <style type="text/css">
+        .style1
+        {
+            width: 70%;
+        }
+        .style2
+        {
+            width: 100%;
+        }
+        .style3
+        {
+            width: 25%;
+        }
+        .style4
+        {
+            width: 75%;
+        }
+    </style>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () {
+            null
+        };
+        function DisableBackButton() {
+            window.history.forward()
+        }
+        DisableBackButton();
+        window.onload = DisableBackButton;
+        window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+        window.onunload = function () { void (0) }
+        window.onload = function () {
+            document.onkeydown = function (event) {
+                //return (e.which || e.keyCode) != 116;
+                switch (event.keyCode) {
+                    case 116: //F5 button
+                        event.returnValue = false;
+                        event.keyCode = 0;
+                        return false;
+                    case 82: //R button
+                        if (event.ctrlKey) {
+                            event.returnValue = false;
+                            event.keyCode = 0;
+                            return false;
+                        }
+                }
+            };
+        }
+    </script>
+    <link type="text/css" rel="Stylesheet" href="../../css/ExternalUserCss.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" autocomplete="off">
+    <div>
+        <div>
+            <table align="center" cellpadding="0" cellspacing="0" class="style1">
+                <tr>
+                    <td>
+                        <%--<uc1:HeaderOnly ID="HeaderOnly1" runat="server" />--%>
+                        <table align="center" cellpadding="0" cellspacing="0" class="style2" bgcolor="#F0F0F0">
+                            <tr>
+                                <td valign="bottom">
+                                    <div class="div_header">
+                                        <div class="div_header_left">
+                                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/satyamevjayate_Logo.png"
+                                                Width="81px" Height="110px" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="logo_txt">
+                                        <div class="div_header_line1">
+                                            Government of India<br />
+                                            Ministry of Jal Shakti<br />
+                                            Department of Water Resources, River Development and Ganga Rejuvenation</div>
+                                        <div class="div_header_line2">
+                                            Central Ground Water Authority (CGWA)
+                                        </div>
+                                        <br />
+                                        <div class="div_header_line3">
+                                            <strong>Application for Issue of NOC to Abstract Ground Water (NOCAP)</strong></div>
+                                    </div>
+                                </td>
+                                <td align="right">
+                                    <div class="div_header_right" align="right">
+                                        <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/logocgwb.png" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="Logged-User">
+                            <table cellpadding="0" cellspacing="0" class="style2">
+                                <tr>
+                                    <td>
+                                    </td>
+                                    <td>
+                                        &nbsp;
+                                    </td>
+                                    <td align="right">
+                                        <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True">A-</asp:LinkButton>
+                                        &nbsp;<asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True">A</asp:LinkButton>
+                                        &nbsp;<asp:LinkButton ID="LinkButton3" runat="server" Font-Bold="True">A+</asp:LinkButton>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table align="center" class="style2">
+                            <tr>
+                                <td>
+                                    <div class="div_Marque">
+                                        <a id="lnkHome" style="float: right;" runat="server" href="~/">
+                                            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/ico_home.png" Height="16px"
+                                                Width="20px" /></a></div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="style2">
+                            <tr>
+                                <td>
+                                    <table width="100%" class="InputForm">
+                                        <tr>
+                                            <td style="width: 200px">
+                                                <uc2:ExternalUserLeftMenu ID="ExternalUserLeftMenu1" runat="server" />
+                                            </td>
+                                            <td>
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

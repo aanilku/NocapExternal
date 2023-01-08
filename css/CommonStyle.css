@@ -1,0 +1,56 @@
+﻿body {
+}
+
+.Initial {
+    display: block;
+    padding: 4px 10px 4px 10px;
+    float: left; /* background: url("../Images/InitialImage.png") no-repeat right top;*/ /*background:-o-linear-gradient(bottom, #6C7A89 5%, #8995A1 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6C7A89), color-stop(1, #8995A1) );
+	            background:-moz-linear-gradient( center top, #6C7A89 5%, #8995A1 100% );
+	            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#6C7A89", endColorstr="#8995A1");	background: -o-linear-gradient(top,#6C7A89,8995A1);*/
+    background-color: #CFE3FA;
+    color: Black;
+    font-weight: bold;
+}
+
+/* .Initial:hover
+            {
+                color: White; 
+                background-color: #094E7F;
+                cursor: hand;
+            }*/
+.Clicked {
+    float: left;
+    display: block; /*background: url("../Images/SelectedButton.png") no-repeat right top;*/
+    background-color: #094E7F;
+    padding: 4px 18px 4px 18px;
+    color: Black;
+    font-weight: bold;
+    color: White;
+}
+
+
+.ButtonStyle {
+    border-radius: 5px 5px 5px 5px;
+    background-color: #094E7F;
+    color: White;
+    font-weight: bold;
+}
+
+.lbl {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.lblCompulsary {
+    font-size: 12px;
+    font-weight: bold;
+    color: #094E7F;
+    font-weight: bold;
+}
+
+.formbody_modelpopup {
+    /*width: 400px;*/
+    height: 350px;
+    /* background: url(../Images/formbody_login.png) no-repeat top;*/
+    background-color: #F2F2F2;
+}

@@ -1,0 +1,239 @@
+﻿/**** Table Layout ****/
+.GridTable
+{
+    margin: 0px;
+    padding: 0px;
+    min-width: 40%;
+    box-shadow: 10px 10px 5px #999999;
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border: 1px solid #C0C0C0;
+    font-family: Tahoma;
+}
+.GridTable tbody tr th
+{
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+    
+}
+.UpperCorns
+{
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -webkit-border-top-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+/*.GridTable table{
+	width:100%;
+	margin:0px;padding:0px;
+	border:1px solid black;
+}
+
+.GridTable tr td{
+	vertical-align:top;
+}
+.GridTable td{
+	vertical-align:middle;
+	text-align:left;
+	padding:2px 1px 2px 1px;
+	font-weight:normal;
+	color:#000000;
+}.GridTable tr th
+{
+    padding:4px;
+    font-weight: bold; 
+    color: Black;
+}
+
+.GridTable tr th span
+{
+    color: #002D00;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+.InputForm {
+/*	margin:0px;padding:0px;
+	min-width:50%;*/
+	box-shadow: 3px 3px 5px #888888;
+	border:1px solid #000000;
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:2px;
+	border-bottom-left-radius:3px;
+	
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+	
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+	
+	-moz-border-radius-topleft:3px;
+	-webkit-border-top-left-radius:3px;
+	border-top-left-radius:3px;
+}.InputForm>table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}
+.InputForm > tbody > tr > td
+{
+    vertical-align: top;
+    background-color: #ECF4FD;
+    border: 2px solid #CCC;
+    border-width: 1px 1px 1px 1px;
+    text-align: left;
+    padding: 5px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: normal;
+    color: #000000;
+}.InputForm tr:last-child td{
+	border-width:1px 1px 1px 1px;
+}.InputForm tr td:last-child{
+	border-width:1px 1px 1px 1px;
+}.InputForm tr:last-child td:last-child{
+	border-width:1px 1px 1px 1px;
+}
+
+
+.InputForm tr th
+{
+    /*background:-o-linear-gradient(bottom, #6C7A89 5%, #8995A1 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6C7A89), color-stop(1, #8995A1) );
+	background:-moz-linear-gradient( center top, #6C7A89 5%, #8995A1 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#6C7A89", endColorstr="#8995A1");	background: -o-linear-gradient(top,#6C7A89,8995A1);
+	background-color:#6C7A89;*/
+    border-style: solid;
+    border-color: #CCC;
+    background-color: #CFE3FA;
+    text-align: center;
+    border-width: 1px 1px 1px 1px;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    color: Black;
+}
+
+.InputForm tr th:last-child{
+	border-width:1px 1px 1px 1px;
+}
+
+
+
+
+
+
+
+
+
+.SubForm {
+/*	margin:0px;padding:0px;
+	min-width:50%;*/
+	
+}.SubForm>table{
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}
+.SubForm>tbody>tr>td{
+	vertical-align:top;
+    background:-o-linear-gradient(bottom, #C7E3F3 5%, #f8f7f3 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #C7E3F3), color-stop(1, #f8f7f3) ); 
+	background:-moz-linear-gradient( center top, #C7E3F3 5%, #f8f7f3 100% );
+	background: -o-linear-gradient(top,#C7E3F3,f8f7f3);
+	background-color:#C7E3F3;
+    border:1px solid #CCC;
+	/*border-width:0px 1px 1px 0px;*/
+	text-align:left;
+	padding:5px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}
+
+.SubForm tr th{
+    background:-o-linear-gradient(bottom, #6C7A89 5%, #8995A1 100%);	
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #6C7A89), color-stop(1, #8995A1) );
+	background:-moz-linear-gradient( center top, #6C7A89 5%, #8995A1 100% );
+	background: -o-linear-gradient(top,#6C7A89,8995A1);
+	background-color:#6C7A89;
+	border:0px solid #CCC;
+	text-align:center;
+	border-width:1px 1px 1px 1px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+
+
+.SubFormWOBG {
+/*	margin:0px;padding:0px;
+	min-width:50%;*/
+	height:100%
+	
+}.SubFormWOBG>table{
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+}
+.SubFormWOBG>tbody>tr>td{
+	vertical-align:top;
+    border:1px solid #CCC;
+	/*border-width:0px 1px 1px 0px;*/
+	text-align:left;
+	padding:5px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}
+
+.SubFormWOBG tr th{
+	border:0px solid #CCC;
+	text-align:center;
+	border-width:1px 1px 1px 1px;
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#000000;
+}
+
+
+.Coumpulsory
+{
+    color:Red;
+}
+.FormProjName
+{
+    font-size: 14px !important;
+}

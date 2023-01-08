@@ -1,0 +1,404 @@
+﻿body
+{
+    background-color: #f2f2f2; /*margin:0px; 	background:url(../images/bg.jpg) repeat-x; 	font-family:Arial,Helvetica,Veranda,sans-serif; 	font-size:12px; 	color:#040404; 	background-color:#f0f0f0;*/
+     /*background:#c0c0c0 url(../CGWAImages/bodybg.gif) repeat-x top;*/
+}
+
+
+/******************* Headings *******************/
+/*
+H1
+{
+    color: #0000ff;
+}
+H2
+{
+    color: #0000ff;
+}
+H3
+{
+    color: #0000ff;
+}
+H4
+{
+    color: #0000ff;
+}
+H5
+{
+    color: #0000ff;
+}
+H1
+{
+    text-transform: none;
+    font-style: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 14pt;
+    font-weight: 700;
+    word-spacing: normal;
+    text-decoration: none;
+}
+H2
+{
+    text-transform: none;
+    font-style: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 12pt;
+    font-weight: 700;
+    word-spacing: normal;
+    text-decoration: none;
+}
+H3
+{
+    text-transform: none;
+    font-style: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 10pt;
+    font-weight: 500;
+    word-spacing: normal;
+    text-decoration: none;
+}
+H4
+{
+    text-transform: none;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 1.33em;
+    font-weight: 500;
+    word-spacing: normal;
+    text-decoration: none;
+}
+H5
+{
+    text-transform: none;
+    font-style: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+    font-size: 1em;
+    font-weight: 700;
+    word-spacing: normal;
+    text-decoration: none;
+}*/
+/*******start main Vertical menu******/
+.Menu
+{
+}
+
+.Menu ul
+{
+    background: #7795BD;
+}
+
+.Menu ul li
+{
+    background: #7795BD url(../Images/menu_bg.gif) repeat-x;
+    text-align: left; /* set width if needed.*/
+    width: 150px;
+}
+
+.Menu ul li a
+{
+    color: black;
+    padding: 4px 2px 4px;
+    padding-left: 8px !important;
+    border: 1px solid #648ABD;
+    border-bottom: 0;
+}
+
+.Menu ul li a:hover
+{
+    background-image: none;
+}
+
+.Menu ul li a:hover
+{
+    color: White;
+}
+
+.Menu ul li a
+{
+    color: Black;
+}
+
+/*******end main Vertical menu******/
+
+
+/******** Line ********/
+.line
+{
+    border-bottom: 2px solid #000033;
+    width: auto;
+    height: 1px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*******start footer menu******/
+.footer-Menu
+{
+    width: 600px;
+    margin: 0px auto;
+}
+.footer-Menu ul
+{
+    margin: 0px;
+    padding: 0px;
+}
+.footer-Menu li
+{
+    text-align: center;
+    float: left;
+    list-style: none;
+}
+.footer-Menu ul li a
+{
+    color: #000;
+    line-height: 50px;
+    float: left;
+    padding: 0px 15px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 0px;
+}
+.footer-Menu ul li a:hover
+{
+  /*  color: #ed3237;*/
+   color: #FFFFFF;
+}
+
+/*******end footer menu******/
+
+/********* Format of text ************/
+.textFormat
+{
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+
+.text_1
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #616161;
+    font-style: normal;
+}
+.text_1:hover
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #FF0000;
+    font-style: normal;
+}
+
+
+.footer_text
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #000000;
+    font-style: normal;
+    padding-right: 9px;
+}
+.footer_text :hover
+{
+    font-family: Tahoma;
+    font-size: 11px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #FF0000;
+    font-style: normal;
+    padding-right: 9px;
+}
+
+/********* div-title **************/
+.div-title
+{
+    font-family: Verdana;
+    font-weight: bold;
+    color: Blue;
+    text-align: center;
+}
+
+/* the selector matches the first <i> element in all <p> elements:*/
+
+p
+{
+    font-family: Verdana;
+    font-size: 12px;
+}
+p > i:first-child
+{
+   /* color: Red;*/
+}
+
+p:first-child i
+{
+    /*color: blue;*/
+}
+p:first-letter
+{
+    /*color: #ff0000;
+    font-size: xx-large;*/
+}
+#para1
+{
+    font-family: "Verdana";
+    font-size: 10px;
+}
+p.uppercase
+{
+    text-transform: uppercase;
+}
+
+/***************Links******************/
+/*a:link
+{
+    color: #3333cc;
+    text-decoration: none;
+}
+a:visited
+{
+    color: #333399;
+    text-decoration: none;
+}
+a:active
+{
+    color: #333399;
+    text-decoration: none;
+}
+a:hover
+{
+    background-color: #0083c1;
+    font-family: verdana,sans-serif,arial;
+    color: #ffffff;
+    font-size: 10pt;
+    font-weight: normal;
+}
+*/
+/************an element can be pushed to the left or right, allowing other elements to wrap around it.******************/
+img.Dfloat
+{
+    float: right;
+}
+
+/************************Align*****************************/
+.center
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    background-color: #b0e0e6;
+}
+
+.right
+{
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    background-color: #b0e0e6;
+}
+/************************ site_map *****************************/
+.site_map
+{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    padding-left: 10px;
+    font-weight: normal;
+}
+/********************* list style *******************/
+/*
+ul
+{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+li
+{
+    float: left;
+}
+ul.a
+{
+    list-style-image: url("../images/menu_bg.gif");
+}
+ul.b
+{
+    list-style-image: url("../images/menu_bg.gif");
+}
+
+UL LI
+{
+    list-style-type: square;
+}
+UL LI LI
+{
+    list-style-type: disc;
+}
+UL LI LI LI
+{
+    list-style-type: circle;
+}
+OL LI
+{
+    list-style-type: decimal;
+}
+OL OL LI
+{
+    list-style-type: lower-alpha;
+}
+OL OL OL LI
+{
+    list-style-type: lower-roman;
+}
+*/
+/******************** image *******************/
+img
+{
+    margin-top: 1px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+img.ex
+{
+    height: 120px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+/**************** button **********************/
+/*
+#LinkButton1
+{
+    text-decoration: none;
+    text-decoration: line-through;
+}
+*/
+/******************** table style**********************/
+/*
+table, th, td
+{
+    border: 1px solid green;
+}
+th
+{
+    background-color: Green;
+    color: White;
+}
+*/

@@ -1,0 +1,297 @@
+﻿body
+{
+    font-family: "Trebuchet MS" , "Lucida Sans Unicode" , "Lucida Grande" , "Lucida Sans" , Arial, sans-serif; /*background: #c0c0c0 url(../Images/bodybg.gif) repeat-x top;*/
+}
+html
+{
+    font-size: .80em;
+}
+.div_Menu
+{
+    background-color: #094E7F;
+}
+/*******start main Horizontal menu******/
+.External_DynamicMenu
+{
+    line-height: 15px;
+}
+
+.External_DynamicMenu ul
+{
+    /*background: #7795BD;*/
+}
+
+.External_DynamicMenu ul li
+{
+    /*background: #7795BD url(../Images/menu_bg.gif) repeat-x;*/
+    background: url(../Images/menu_bg.gif) repeat-x;
+    text-align: left; /* set width if needed.*/
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/*.External_DynamicMenu ul li a
+{
+    color: white;
+    padding: 4px 2px 4px;
+    padding-left: 8px !important;
+    border: 1px solid #648ABD;
+    border-bottom: 0;
+} */
+
+.External_DynamicMenu ul li a
+{
+    color: white;
+    padding: 4px 2px 4px;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+    border: 1px solid #648ABD;
+    border-bottom: 0;
+}
+
+.External_DynamicMenu ul li a:hover
+{
+    background-image: none;
+    color: White;
+}
+
+/*******end main Horizontal menu******/
+
+
+.div_header_Center
+{
+    width: 454px;
+}
+
+
+
+.div_header_line1
+{
+    font-family: arial,helvetica,clean,sans-serif;
+    text-align: center;
+    color: #094E7F;
+    font-size: 20px;
+}
+.div_header_line2
+{
+    font-family: arial,helvetica,clean,sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #094E7F;
+}
+.div_header_line3
+{
+    font-family: arial,helvetica,clean,sans-serif;
+    text-align: center;
+    font-size: 18px;
+}
+
+.div_Marque
+{
+    background-color: #094E7F;
+    height: 20px;
+}
+
+.div_IndAppHeading
+{
+    background-color: #094E7F; /*height: 20px;     text-align: center;*/
+    color: White;
+    font-weight: bold;
+}
+/******Loged-User*****/
+.Logged-User
+{
+    color: #094E7F;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: left;
+}
+
+
+.div_ApplicantRegistration1
+{
+    font-family: Arial;
+    font-size: 14px;
+}
+
+/*************** User Registration left menu****************/
+.content_outer
+{
+    width: 100%;
+    background: #fff;
+    float: left;
+    font-family: Arial;
+    font-size: 14px;
+}
+.block_left, .block_left_inner
+{
+    /*width: 250px;*/
+    float: left;
+}
+.cont_left
+{
+    background: #F0F0F0;
+    margin-bottom: 4px;
+}
+.cont_left_pad
+{
+    padding: 10px;
+}
+
+.block_left, .block_left_inner
+{
+    /*width: 250px;*/
+    width: 100%;
+    float: left;
+}
+
+.hd_left, .hd_left_inner
+{
+    /*width: 230px;*/
+    background: #eaedf2;
+    margin-bottom: 4px;
+    color: #094E7F;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.hd_link_default, .hd_link_active
+{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.bullets1
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 25px;
+}
+.bullets1 li a, a
+{
+    color: #0066CC;
+    text-decoration: none;
+}
+.bullets1 li a:hover, a:hover
+{
+    color: #0066CC;
+    text-decoration: underline;
+}
+
+.bullets1 ul
+{
+    line-height: 25px;
+    list-style-image: url('../Images/bullet.png');
+    
+}
+.bullets1 ul li
+{
+    height: 25px;
+    line-height: 25px;
+   /* padding-left: 15px;*/
+    
+}
+/***************Applicant Registration****************/
+.block_right_inner
+{
+    padding-left: 20px;
+}
+
+.hd_blue
+{
+    font-size: 20px;
+    color: #094E7F;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #094E7F;
+    margin-bottom: 10px;
+}
+.mandatory_msg
+{
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    color: #696969;
+    line-height: 20px;
+}
+.mandatory
+{
+    color: red;
+}
+/*-------------Industrial appplication registration--------------*/
+
+
+.block_left_inner
+{
+    /* width: 250px;*/
+    float: left;
+}
+
+.cont_left
+{
+    background: #F0F0F0;
+    margin-bottom: 4px;
+}
+.progressbar {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.progressbar li
+{
+    /*height: 30px;*/
+    line-height: 20px;
+    border-bottom: 1px solid #ccc;
+    color: #29598c;
+    text-decoration: none;
+    padding: 5px;
+    display: block; /*background: -o-linear-gradient(bottom, #8CCAF7 5%, #F0F0F0 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8CCAF7), color-stop(1, #F0F0F0) );
+    background: -moz-linear-gradient( center top, #8CCAF7 5%, #F0F0F0 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8CCAF7", endColorstr="#F0F0F0");
+    background: -o-linear-gradient(top,#8CCAF7,F0F0F0);*/
+    background-color: White;
+}
+.progressbar li.active
+{
+    background: #29598c;
+    color: #fff;
+}
+.progressbar li.visited
+{
+    /*background: #d7d7de url(../Images/tick.gif); */
+    background: #CFE3FA url(../Images/tick.gif);
+    /*background-image:url(../Images/tick.gif);
+    background-image:url(../Images/tick.gif),-o-linear-gradient(bottom, White 5%, #8995A1 100%);	
+    background-image:url(../Images/tick.gif),-webkit-gradient( linear, left top, left bottom, color-stop(0.05, White), color-stop(1, #8995A1) );
+	background-image:url(../Images/tick.gif),-moz-linear-gradient( center top, White 5%, #8995A1 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="White", endColorstr="#8995A1");	
+	background-image: url(../Images/tick.gif),-o-linear-gradient(top,White,8995A1);
+	background-color:White ;*/
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-y:8px;
+    color: #29598c;
+    padding-left: 30px;
+    height: auto;
+}
+/*-----------Applicant Home-------------------*/
+.SubmittedApp
+{
+    font-family: Arial;
+    font-size: 14px;
+    height:20px;
+    background-color:#094E7F;
+   color:White;
+}
+.SubmittedApp_Sub
+{
+    font-family: Arial;
+    font-size: 14px;
+    height:20px;
+    background-color:#094E7F;
+   color:White;
+}

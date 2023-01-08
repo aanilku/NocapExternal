@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ExternalUserMaster.master.cs"
+    Inherits="ExternalUser_ExternalUserMaster" %>
+
+<%@ Register Src="../AscxControl/HeaderOnly.ascx" TagName="HeaderOnly" TagPrefix="uc1" %>
+<%@ Register Src="LogInMsg.ascx" TagName="LogInMsg" TagPrefix="uc2" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>NOCAP</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../css/table.css" rel="stylesheet" type="text/css" />
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=../InternalEnablejava.htm" />
+    </noscript>
+    <script type="text/javascript">
+        //window.onload = burstCache();
+        //function burstCache() {
+        //    if (!navigator.onLine) {
+        //        window.location = '../ExternalErrorPage404.htm';
+        //    }
+        //}
+    </script>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () {
+            null
+        };
+        function DisableBackButton() {
+            window.history.forward()
+        }
+        DisableBackButton();
+        window.onload = DisableBackButton;
+        window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+        window.onunload = function () { void (0) }
+        window.onload = function () {
+            document.onkeydown = function (event) {
+                //return (e.which || e.keyCode) != 116;
+                switch (event.keyCode) {
+                    case 116: //F5 button
+                        event.returnValue = false;
+                        event.keyCode = 0;
+                        return false;
+                    case 82: //R button
+                        if (event.ctrlKey) {
+                            event.returnValue = false;
+                            event.keyCode = 0;
+                            return false;
+                        }
+                }
+            };
+        }
+    </script>
+    <style type="text/css">
+        .style1 {
+            /* width: 75%;*/
+            width: 1000px;
+        }
+
+        .style2 {
+            width: 100%;
+        }
+    </style>
+    <link type="text/css" rel="Stylesheet" href="../css/ExternalUserCss.css" />
+</head>
+<body>
+    <form id="form1" runat="server" autocomplete="off" defaultbutton="btn1">
+        <asp:Button runat="server" ID="btn1" Style="display: none;" Enabled="False" />
+        <div>
+            <table align="center" class="ContentBody" width="80%">
+                <tr>
+                    <td>
+                        <table align="center">
+                            <tr>
+                                <td>
+                                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/ScrollImage.jpg" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <uc1:HeaderOnly ID="HeaderOnly1" runat="server" />
+                        <div class="Logged-User">
+                            <table cellpadding="0" cellspacing="0" class="style2">
+                                <tr>
+                                    <td align="left">
+                                        <uc2:LogInMsg ID="LogInMsgInMaster" runat="server" />
+                                    </td>
+                                    <td align="right">
+                                        <asp:LinkButton ID="lbnLogout" runat="server" Font-Bold="True" Text="Logout" CausesValidation="false"
+                                            OnClick="lbnLogout_Click"></asp:LinkButton>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table align="center" class="style2">
+                            <tr>
+                                <td align="right">
+                                    <div class="div_Menu" align="center" runat="server" id="topmenu">
+
+                                        <asp:Menu ID="ExternalMenu" runat="server" Orientation="Horizontal" CssClass="External_DynamicMenu"
+                                            OnMenuItemClick="ExternalMenu_MenuItemClick">
+                                            <Items>
+                                                <asp:MenuItem Text="Applicant Home" Value="Applicant Home"
+                                                    NavigateUrl="~/ExternalUser/ApplicantHome.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Apply" Value="Apply" Selectable="false">
+                                                    <asp:MenuItem Text="New Application" Value="New Application" Selectable="false">
+
+                                                        <asp:MenuItem Text="Industrial">
+                                                            <asp:MenuItem Text="Up To 100 KLD" Value="Industrial"></asp:MenuItem>
+                                                            <asp:MenuItem Text="Greatet Than 100 KLD" Value="IndustrialG"></asp:MenuItem>
+                                                        </asp:MenuItem>
+                                                        <asp:MenuItem Text="Infrastructure" Value="Infrastructure"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Mining" Value="Mining"></asp:MenuItem>
+                                                    </asp:MenuItem>
+                                                    <asp:MenuItem Text="Renew Application" Value="Renew Application" Selectable="false">
+                                                        <asp:MenuItem Text="Industrial" Value="RenewIndustrial"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Infrastructure" Value="RenewInfrastructure"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Mining" Value="RenewMining"></asp:MenuItem>
+                                                    </asp:MenuItem>
+
+                                                     <asp:MenuItem Text="Expansion" Value="Expansion Application" Selectable="false">
+                                                        <asp:MenuItem Text="Expansion Industrial" Value="ExpansionIndustrial"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Expansion Infrastructure" Value="ExpansionInfrastructure"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Expansion Mining" Value="ExpansionMining"></asp:MenuItem>
+                                                    </asp:MenuItem>
+
+                                                </asp:MenuItem>
+
+                                                <asp:MenuItem Text="Feedback" Value="Feedback" NavigateUrl="~/ExternalUser/Feedback/Feedback.aspx"></asp:MenuItem>
+
+                                                <asp:MenuItem Text="Change Password" Value="Change Password"></asp:MenuItem>
+                                                <asp:MenuItem Text="Profile" Value="Profile" Selectable="false">
+                                                    <asp:MenuItem Text="View/Update" Value="View"></asp:MenuItem>
+                                                </asp:MenuItem>
+
+                                                <asp:MenuItem Text="Submitted Grievance" Value="SubmitGrievance" NavigateUrl="~/ExternalUser/Grievance/Submitted.aspx"></asp:MenuItem>
+                                                <asp:MenuItem Text="Payment" Value="Payment" Selectable="false">
+                                                    <asp:MenuItem Text="Pay" Value="PayPayment"></asp:MenuItem>
+                                                    <asp:MenuItem Text="View" Value="ViewPayment" Selectable="false">
+                                                        <asp:MenuItem Text="Via NOCAP" Value="ViaNOCAP"></asp:MenuItem>
+                                                        <asp:MenuItem Text="Via Bharatkosh" Value="ViaBharatkosh"></asp:MenuItem>
+                                                    </asp:MenuItem>
+                                                </asp:MenuItem>
+                                            </Items>
+                                        </asp:Menu>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table align="center" class="InputForm" width="80%">
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <table align="center" width="100%">
+                            <tr>
+                                <td>
+                                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/ScrollImage.jpg" Width="100%" />
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>

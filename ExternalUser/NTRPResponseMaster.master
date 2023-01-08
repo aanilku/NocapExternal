@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="NTRPResponseMaster.master.cs" Inherits="ExternalUser_NTRPResponseMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>NOCAP</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="../css/table.css" rel="stylesheet" type="text/css" />
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=../InternalEnablejava.htm" />
+    </noscript>
+    <script type="text/javascript">
+        window.onload = burstCache();
+        function burstCache() {
+            if (!navigator.onLine) {
+                window.location = '../ExternalErrorPage404.htm';
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward();
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () {
+            null
+        };
+        function DisableBackButton() {
+            window.history.forward()
+        }
+        DisableBackButton();
+        window.onload = DisableBackButton;
+        window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+        window.onunload = function () { void (0) }
+        window.onload = function () {
+            document.onkeydown = function (event) {
+                //return (e.which || e.keyCode) != 116;
+                switch (event.keyCode) {
+                    case 116: //F5 button
+                        event.returnValue = false;
+                        event.keyCode = 0;
+                        return false;
+                    case 82: //R button
+                        if (event.ctrlKey) {
+                            event.returnValue = false;
+                            event.keyCode = 0;
+                            return false;
+                        }
+                }
+            };
+        }
+    </script>
+    <style type="text/css">
+        .style1 {
+            /* width: 75%;*/
+            width: 1000px;
+        }
+
+        .style2 {
+            width: 100%;
+        }
+    </style>
+    <link type="text/css" rel="Stylesheet" href="../css/ExternalUserCss.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
